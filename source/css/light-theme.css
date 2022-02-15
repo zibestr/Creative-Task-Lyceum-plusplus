@@ -1,0 +1,62 @@
+body {
+  background-color: #f5f6fb;
+}
+
+a {
+  color: black;
+}
+
+.banner-info {
+  color: white;
+}
+
+.violet-text {
+  color: #7F39FB;
+}
+
+.short-characteristic {
+  color: #999999;
+}
+
+.btn-about-me {
+  color: white;
+  background-color: #7F39FB;
+}
+
+.gray-text {
+  color: #999999;
+}
+
+.about-me h1, .contacts h2 {
+  border-bottom: 4px solid #7F39FB;
+}
+
+.about-me-info h2 {
+  text-decoration-color: rgba(127, 57, 251, 0.5);
+}
+
+.portfolio-container h1 {
+  text-decoration-color: rgba(176, 125, 255, 0.4);
+}
+
+.about-me-info p {
+  color: #464646;
+}
+
+.portfolio {
+  background-color: #7F39FB;
+  color: white;
+}
+
+.frame .details {
+  background: rgba(255,255,255,0.9);
+  color: black;
+}
+
+.footer {
+  background-color: #ECECEC;
+}
+
+.footer-container mark {
+  color: black;
+}

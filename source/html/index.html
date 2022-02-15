@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Моя страница</title>
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/light-theme.css" id="theme-link" />
+    </head>
+
+    <body>
+        <nav class="navbar-main margin-left">
+            <h1 class="logo"><a href="https://lyceum.yandex.ru/">Лицей++ Академии <mark class="violet-text">Я</mark>ндекса</a></h1>
+            <ul class="navbar">
+                <li class="menu-item"><a href="#about-me">Обо мне</a></li>
+                <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
+                <li class="menu-item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+        <section class="banner-info">
+            <div class="info margin-left element-animation">
+                <h1 class="greetings">
+                    <mark class="violet-text">>>> print</mark><span class="gray-text">(</span>greetings<span class="gray-text">)</span><br>
+                    Привет! Меня зовут <mark class="violet-text">Яшин Данила</mark></h1>
+                <h2 class="presentation">Я <mark class="violet-text">Python</mark> Разработчик</h2>
+                <p class="short-characteristic">Занимаюсь программированием с 8 класса и сейчас заканчиваю 11 класс и 2 курс Яндекс.Лицея.
+                    Из ЯП хорошо владею Python.
+                    На данный момент изучаю Kotlin.
+                    Желаю поступить в Яндекс.Лицей++
+                    для более углубленного изучения backend технологий на языке Python.
+                </p>
+                <a class="btn-about-me" href="#about-me">Обо мне</a>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <h1 class="margin-left">Обо мне</h1>
+            <article class="about-me-info element-animation margin-left">
+                <h2>Начинающий backend разработчик</h2>
+                <p>
+                    Моё полное имя - Яшин Данила Олегович, я проживаю в Брянской области, в городе Брянск.<br>
+                    Мне 17 лет, я ученик 11 класса МБОУ "Гимназия №6" г. Брянска. &#127891;<br>
+                    Программировать я начал в 8 классе, а в 10 классе поступил в Яндекс.Лицей на базе
+                    Брянского государственного инженерно-технологического университета. &#128187;<br>
+                    Сейчас изучаю Kotlin для мобильной разработки под Android, с недавнего времени заинтересовался
+                    фреймфорком от Google под названием ARCore для создания приложений дополненной реальности. &#128218; <br>
+                    Активно участвую в математических олимпиадах. &#129299;<br>
+                    Мой GitHub здесь <a href="#contacts">&#128071;</a>
+                </p>
+                <img src="../../media/my_photo.webp" alt="Моя фотография">
+            </article>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-container element-animation margin-left">
+                <h1>Моё Портфолио</h1>
+                <div class = "gallery">
+                    <div class = "frame">
+                        <img src="../../media/portfolio/game.png" alt="Игра на pygame">
+                        <div class = "details">
+                            <h2><a href="https://github.com/zibestr/Blastermania" target="_blank"><mark class = "violet-text">И</mark>гра на PyGame</a></h2>
+                            <p>Игра в жанре RogueLike, созданная на фреймфорке pygame.</p>
+                        </div>
+                    </div>
+                    <div class = "frame">
+                        <img src="../../media/portfolio/phone_book.png" alt="Телефонная книга на PyQT и SQLite3">
+                        <div class = "details">
+                            <h2><mark class = "violet-text">Т</mark>елефонная книга</h2>
+                            <p>Декстоп приложение телефонной книги с БД, разработанное на PyQT5 и SQLite3.</p>
+                        </div>
+                    </div>
+                    <div class = "frame">
+                        <img src="../../media/portfolio/smart_house.png" alt="Проект умного дома на ESP8266">
+                        <div class = "details">
+                            <h2><a href="https://github.com/zibestr/IOT-Project" target="_blank"><mark class = "violet-text">П</mark>роект умного дома на MicroPython</a></h2>
+                            <p>Часть системы умного дома, созданного на основе микроконтроллеров на чипе ESP8266 и фреймфорка
+                            MicroPython.</p>
+                        </div>
+                    </div>
+                    <div class = "frame">
+                        <img src="../../media/portfolio/cel-bodies.png" alt="Программа для моделирования звездных систем">
+                        <div class = "details">
+                            <h2><a href="https://github.com/zibestr/Celestial-Bodies-Motion-Simulator" target="_blank"><mark class = "violet-text">П</mark>рограмма для моделирования звездных систем</a></h2>
+                            <p>Программа для моделирования звездных систем, с возможностью построения траекторий движения небесных тел.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="margin-left">Мои контакты</h2>
+            <div class="contacts-container element-animation">
+                <div class="github-contact">
+                    <a href="https://github.com/zibestr" target="_blank"><img id="github-icon" src="../../media/icons/github-light.png" alt="GitHub"></a>
+                </div>
+                <div class="vk-contact">
+                    <a href="https://vk.com/patterns_fan" target="_blank"><img src="../../media/icons/vk.png" alt="VK"></a>
+                </div>
+                <div class="telegram-contact">
+                    <a href="https://t.me/Bomjgangster" target="_blank"><img src="../../media/icons/telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container margin-left">
+                <mark>&copy; Danila Yashin</mark>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
