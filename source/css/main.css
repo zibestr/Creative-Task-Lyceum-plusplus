@@ -14,7 +14,7 @@ a {
 .navbar-main {
     display: grid;
     grid-template-columns: 55% 48% 5%;
-    margin-top: 0.5%;
+    margin-top: 0;
 }
 
 .navbar {
@@ -22,7 +22,7 @@ a {
     grid-template-columns: repeat(4, 20%);
     grid-column-gap: 15%;
     list-style: none;
-    margin-top: 6%;
+    margin-top: 2.2vw;
     font-family: "Avantgarde", sans-serif;
     font-size: 1.1vw;
     grid-column: 2/2;
@@ -232,7 +232,7 @@ a {
 }
 
 .switch {
-    margin-top: 1.5vw;
+    margin-top: 1.8vw;
     position: relative;
     display: inline-block;
     width: 3.4vw;
