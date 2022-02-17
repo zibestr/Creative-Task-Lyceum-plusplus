@@ -1,4 +1,4 @@
-// плавная прокрутка
+// плавная прокрутка для якорных ссылок
 const anchors = document.querySelectorAll('a[href^="#"]')
 
 for (let anchor of anchors) {
@@ -15,6 +15,7 @@ for (let anchor of anchors) {
 }
 
 // плавное появление элементов на экране
+// реализовано на обсерверах
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -30,22 +31,21 @@ for (let elm of elements) {
 }
 
 // переключение между темами
-// Select the button
 const slider = document.querySelector(".slider");
-// Select the stylesheet <link>
+// находит внешнюю ссылку на стиль темы
 const theme = document.querySelector("#theme-link");
+// для замены картинки гитхаба в разделе контактов
 const github_img = document.querySelector("#github-icon");
 
-// Listen for a click on the button
+// прослушка ивента нажатия на слайдер
 slider.addEventListener("click", function() {
-    // If the current URL contains "ligh-theme.css"
+    // если стоит светлая тема
     if (theme.getAttribute("href") == "../css/light-theme.css") {
-        // ... then switch it to "dark-theme.css"
+        // то заменяет тему на темную вместе с картинкой гитхаба
         theme.href = "../css/dark-theme.css";
         github_img.src = "../../media/icons/github-dark.png"
-        // Otherwise...
     } else {
-        // ... switch it to "light-theme.css"
+        // иначе меняет тему на светлую вместе с картинкой гитхаба
         theme.href = "../css/light-theme.css";
         github_img.src = "../../media/icons/github-light.png"
     }

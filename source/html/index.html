@@ -4,18 +4,23 @@
         <meta charset="UTF-8">
         <title>Моя страница</title>
         <link rel="stylesheet" href="../css/main.css" />
+<!--            файл стилей для мобильной версии-->
         <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 768px)" />
+<!--        темная тема реализована с помощью переключения файла со стилями в js-->
         <link rel="stylesheet" href="../css/light-theme.css" id="theme-link" />
     </head>
 
     <body>
+<!--        навигационная панель-->
         <nav class="navbar-main margin-left">
             <h1 class="logo"><a href="https://lyceum.yandex.ru/">Лицей++ Академии <mark class="violet-text">Я</mark>ндекса</a></h1>
+<!--            меню сайта для декстоп версии-->
             <ul class="navbar">
                 <li class="menu-item"><a href="#about-me">Обо мне</a></li>
                 <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
                 <li class="menu-item"><a href="#contacts">Контакты</a></li>
             </ul>
+<!--            меню сайта для мобильной версии-->
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
@@ -27,11 +32,14 @@
                     <li class="menu__item"><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
+<!--            переключатель темы-->
+<!--            слайдер реализован с помощью скрытого чекбокса-->
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
             </label>
         </nav>
+<!--            краткое представление-->
         <section class="banner-info">
             <div class="info margin-left element-animation">
                 <h1 class="greetings">
@@ -47,6 +55,7 @@
                 <a class="btn-about-me" href="#about-me">Обо мне</a>
             </div>
         </section>
+<!--            более подробное представление-->
         <section class="about-me" id="about-me">
             <h1 class="margin-left">Обо мне</h1>
             <article class="about-me-info element-animation margin-left">
@@ -64,6 +73,7 @@
                 <img src="../../media/my_photo.jpg" alt="Моя фотография">
             </article>
         </section>
+<!--            моё портфолио-->
         <section class="portfolio" id="portfolio">
             <div class="portfolio-container element-animation margin-left">
                 <h1>Моё Портфолио</h1>
@@ -100,6 +110,7 @@
                 </div>
             </div>
         </section>
+<!--            мои контакты-->
         <section class="contacts" id="contacts">
             <h2 class="margin-left">Мои контакты</h2>
             <div class="contacts-container element-animation">
@@ -114,6 +125,7 @@
                 </div>
             </div>
         </section>
+<!--            футер сайта-->
         <footer class="footer">
             <div class="footer-container margin-left">
                 <mark>&copy; Danila Yashin</mark>

@@ -1,3 +1,4 @@
+/* мобильное меню в виде бургер-меню */
 .hamburger-menu {
     opacity: 1;
     grid-column: 2/4;
@@ -24,7 +25,7 @@
     grid-row: 1/1;
 }
 
-/* стилизуем кнопку */
+/* кнопка меню */
 .menu__btn {
     align-items: center;  /* центрируем содержимое кнопки */
     width: 2.8vw;
@@ -33,7 +34,7 @@
     z-index: 1;
 }
 
-/* добавляем "гамбургер" */
+/* "гамбургер" для мобильного меню */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -43,14 +44,17 @@
     height: 0.15vw;
     background-color: #616161;
 }
+
 .menu__btn > span::before {
     content: '';
     top: -1.2vw;
 }
+
 .menu__btn > span::after {
     content: '';
     top: 1.2vw;
 }
+
 /* контейнер меню */
 .menu__box {
     display: block;
@@ -66,6 +70,7 @@
     text-align: center;
     transition: .3s ease-in-out;
 }
+
 /* элементы меню */
 .menu__item {
     display: block;
@@ -75,17 +80,21 @@
     font-weight: 600;
     text-decoration: none;
 }
+
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 55%;
