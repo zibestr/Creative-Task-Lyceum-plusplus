@@ -24,7 +24,7 @@ a {
 }
 
 .gray-text {
-    color: #dcd9d9;
+    color: #999999;
 }
 
 .about-me h1, .contacts h2 {
@@ -62,4 +62,22 @@ a {
 
 .footer-container mark {
     color: white;
+}
+
+.menu__box {
+    background-color: #0e0d0d;
+}
+
+.menu__item {
+    color: #333;
+}
+
+.menu__item:hover {
+    background-color: #737373;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    background-color: #737373;
 }

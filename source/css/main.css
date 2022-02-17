@@ -13,7 +13,7 @@ a {
 
 .navbar-main {
     display: grid;
-    grid-template-columns: 55% 48% 5%;
+    grid-template-columns: 55% 48% 0.6% 5%;
     margin-top: 0;
 }
 
@@ -36,6 +36,10 @@ a {
 
 .menu-item a:hover {
     font-weight: 600;
+}
+
+.hamburger-menu {
+    opacity: 0;
 }
 
 .logo {
@@ -63,7 +67,6 @@ a {
 
 .greetings {
     font-size: 1.5vw;
-    letter-spacing: -1px;
     line-height: 1.5;
 }
 
