@@ -40,13 +40,13 @@ const github_img = document.querySelector("#github-icon");
 // прослушка ивента нажатия на слайдер
 slider.addEventListener("click", function() {
     // если стоит светлая тема
-    if (theme.getAttribute("href") == "../css/light-theme.css") {
+    if (theme.getAttribute("href") == "source/css/light-theme.css") {
         // то заменяет тему на темную вместе с картинкой гитхаба
-        theme.href = "../css/dark-theme.css";
-        github_img.src = "../../media/icons/github-dark.png"
+        theme.href = "source/css/dark-theme.css";
+        github_img.src = "media/icons/github-dark.png"
     } else {
         // иначе меняет тему на светлую вместе с картинкой гитхаба
-        theme.href = "../css/light-theme.css";
-        github_img.src = "../../media/icons/github-light.png"
+        theme.href = "source/css/light-theme.css";
+        github_img.src = "media/icons/github-light.png"
     }
 });
